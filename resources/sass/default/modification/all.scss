@@ -1,2 +1,72 @@
 @import "mobile";
 @import "semantic_ui";
+
+//Alterações novas.
+
+//Botões novos.
+.buttonAlign{
+    margin-left: 102px;
+    margin-bottom: 110px;
+}
+
+.ui.icon.button.action.fluid.newButton {      
+    float: left;
+    top: -135px;    
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    width: 30px;
+    height: 30px;
+}
+
+.ui.icon.button.grey.fluid.newButton
+{
+    float: left;
+    top: -135px;    
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    width: 30px;
+    height: 30px;
+}
+
+.ui.icon.button.primary.fluid.add-event-list.newButton
+{
+    float: left;
+    top: -135px;    
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    width: 30px;
+    height: 30px;
+}
+
+//Coração antigo. (Esconder)
+.card.produto .wishlist .bcg-heart {
+    display: none !important;
+}
+
+//icone de bolsa.
+i.icon.add.to.cart::before{
+    content: "\f290";
+}
+
+//icone de coração.
+.icon.heart{
+    content: "\f004";
+}
+
+//div com 2 botões.
+.card.produto .content .info .sku-options{    
+    display: inline-flex;
+    width: 80px;
+}
+
+//Logo da Agência.
+.ui.middle.aligned.image {
+    left: 430px;
+}
+
+//Barra de pesquisa.
+.ui.search {
+    position: absolute;
+    left: -415px;
+    top: -20px;
+}

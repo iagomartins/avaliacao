@@ -144,31 +144,53 @@
                 <!-- Verificar se o produto é conjunto -->
                 @if (Model.HasConjunct)
                 {
-                    <a href="@(Model.UrlFriendlyCustom != null ? Model.UrlFriendlyCustom : Model.UrlFriendly)" title="Comprar" class="ui labeled icon button action fluid btn-comprar text uppercase" data-idproduct="@Model.IdProduct" data-name="Model.Name">
-                        <i id="btn-icon-card-Model.IdProduct" class="icon announcement"></i>
-                        Comprar
+                    <div class = "buttonAlign">
+                    <a href="@(Model.UrlFriendlyCustom != null ? Model.UrlFriendlyCustom : Model.UrlFriendly)" title="Comprar" class="ui icon button action fluid newButton btn-comprar" data-idproduct="@Model.IdProduct" data-name="Model.Name">
+                        <i id="btn-icon-card-Model.IdProduct" class="icon announcement"></i>                        
                     </a>
+
+                    <a href="@(Model.UrlFriendlyCustom != null ? Model.UrlFriendlyCustom : Model.UrlFriendly)" class="ui icon button action fluid newButton btn-comprar" data-idproduct="@Model.IdProduct" data-name="Model.Name">
+                        <i id="btn-icon-card-Model.IdProduct" class="icon heart"></i>                        
+                    </a>
+                    </div>
                 }
                 else if (Model.FlagExhausted || Model.Stock <= 0)
                 {
-                    <a id="btn-comprar-card-@Model.IdProduct" title="Avise-me" class="ui labeled icon button grey fluid avise-card avise-me-modal text uppercase" data-idproduct="@Model.IdProduct" data-name="@Model.Name">
+                    <div class = "buttonAlign">
+                    <a id="btn-comprar-card-@Model.IdProduct" title="Avise-me" class="ui icon button grey fluid newButton avise-card avise-me-modal" data-idproduct="@Model.IdProduct" data-name="@Model.Name">
                         <i id="btn-icon-card-@Model.IdProduct" class="icon announcement"></i>
                         Avise-me
                     </a>
+
+                    <a href="@(Model.UrlFriendlyCustom != null ? Model.UrlFriendlyCustom : Model.UrlFriendly)" class="ui icon button action fluid newButton btn-comprar" data-idproduct="@Model.IdProduct" data-name="Model.Name">
+                        <i id="btn-icon-card-Model.IdProduct" class="icon heart"></i>                        
+                    </a>
+                    </div>
                 }
                 else if (Session["EventList"] != null)
                 {
-                    <a id="add-event-list-@Model.IdProduct" title="Adicionar à Lista" class="ui labeled icon button primary fluid add-event-list text uppercase" data-idproduct="@Model.IdProduct" data-name="@Model.Name">
+                    <div class = "buttonAlign">
+                    <a id="add-event-list-@Model.IdProduct" title="Adicionar à Lista" class="ui icon button primary fluid add-event-list newButton" data-idproduct="@Model.IdProduct" data-name="@Model.Name">
                         <i id="btn-icon-card-@Model.IdProduct" class="icon add to cart"></i>
                         Adicionar à Lista
                     </a>
+
+                    <a href="@(Model.UrlFriendlyCustom != null ? Model.UrlFriendlyCustom : Model.UrlFriendly)" class="ui icon button action fluid newButton btn-comprar" data-idproduct="@Model.IdProduct" data-name="Model.Name">
+                        <i id="btn-icon-card-Model.IdProduct" class="icon heart"></i>                        
+                    </a>
+                    </div>
                 }
                 else
                 {
-                    <a id="btn-comprar-card-@Model.IdProduct" title="Comprar" class="ui labeled icon button action fluid btn-comprar-card text uppercase" data-idproduct="@Model.IdProduct" data-name="@Model.Name">
-                        <i id="btn-icon-card-@Model.IdProduct" class="icon add to cart"></i>
-                        Comprar
+                    <div class = "buttonAlign">
+                    <a id="btn-comprar-card-@Model.IdProduct" title="Comprar" class="ui icon button action fluid newButton btn-comprar-card" data-idproduct="@Model.IdProduct" data-name="@Model.Name">
+                        <i id="btn-icon-card-@Model.IdProduct" class="icon add to cart"></i>                        
                     </a>
+
+                    <a href="@(Model.UrlFriendlyCustom != null ? Model.UrlFriendlyCustom : Model.UrlFriendly)" class="ui icon button action fluid newButton btn-comprar" data-idproduct="@Model.IdProduct" data-name="Model.Name">
+                        <i id="btn-icon-card-Model.IdProduct" class="icon heart"></i>                        
+                    </a>
+                    </div>
                 }
             </div>
             <div class="dados">

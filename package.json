@@ -11,7 +11,7 @@
     },
     "dependencies": {
         "@babel/polyfill": "^7.0.0",
-        "axios": "^0.21.1",
+        "axios": "^1.12.2",
         "card": "^2.4.0",
         "easyzoom": "^2.5.0",
         "jetcheckout": "^1.0.10",
@@ -31,7 +31,7 @@
         "toastr": "^2.1.2"
     },
     "devDependencies": {
-        "browser-sync": "^2.26.5",
+        "browser-sync": "^3.0.4",
         "browser-sync-webpack-plugin": "^1.2.0",
         "cross-env": "^5.2.0",
         "laravel-mix-jet": "^1.5.1-3",
